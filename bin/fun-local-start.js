@@ -23,10 +23,10 @@ program
     Once compiled or packaged result changed, the modified code will take effect immediately without restarting the http server.`
   )
   .usage('[options] <[service/]function>')
-  .option('-d, --debug-port <port>', 'specify the sandbox container starting in debug' +
+  .option('-d, --debug-port <port>', 'Specify the sandbox container starting in debug' +
     ' mode, and exposing this port on localhost')
   .option('-c, --config <ide/debugger>', 
-    'select which IDE to use when debugging and output related debug config tips for the IDE. Options：\'vscode\', \'pycharm\'')
+    'Select which IDE to use when debugging and output related debug config tips for the IDE. Options：\'vscode\', \'pycharm\'')
   .parse(process.argv);
 
 if (program.args.length > 1) {
